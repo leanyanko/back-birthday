@@ -1,6 +1,6 @@
 INSERT INTO USERS(USERNAME, PASSWORD, FIRST_NAME, LAST_NAME, EMAIL, ABOUT_ME)
 VALUES
-    ('CRHarding', 'Casey', 'Casey', 'Harding', 'casey.r.harding@gmail.com', 'I like birthdays'),
+    ('CaseyRHarding', 'Casey', 'Casey', 'Harding', 'casey.r.harding@gmail.com', 'I like birthdays'),
     ('AnnaAnna', 'Anna', 'Anna', 'L', 'Anna@anna.com', 'I love birthdays');
 
  INSERT INTO GIFTS (TITLE, DESCRIPTION, AMOUNT)
