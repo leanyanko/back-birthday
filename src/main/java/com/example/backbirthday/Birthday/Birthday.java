@@ -13,8 +13,8 @@ public class Birthday {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @OneToOne(mappedBy = "user", cascade=CascadeType.ALL)
-    private User user = new User ();
+//    @OneToOne(mappedBy = "user", cascade=CascadeType.ALL)
+//    private User user = new User ();
 
     @Column(name = "WANTED_GIFTS")
     private String wantedGifts;
