@@ -1,5 +1,6 @@
 package com.example.backbirthday.Birthday;
 
+import com.example.backbirthday.Gift.Gift;
 import com.example.backbirthday.User.User;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.*;
@@ -8,8 +9,6 @@ import org.hibernate.annotations.OnDeleteAction;
 import org.springframework.web.bind.annotation.CrossOrigin;
 
 import javax.persistence.*;
-import java.util.HashSet;
-import java.util.Set;
 
 @CrossOrigin
 @Data
@@ -26,6 +25,9 @@ public class Birthday {
     @JsonIgnore
     private User user;
 
-    @Column(name = "WANTED_GIFTS")
-    private String wantedGifts;
+    @ManyToOne(fetch = FetchType.LAZY, optional = false)
+    @JoinColumn(name = "WANTED_GIFTS", nullable = false)
+    @OnDelete(action = OnDeleteAction.CASCADE)
+    @JsonIgnore
+    private Gift gift;
 }
