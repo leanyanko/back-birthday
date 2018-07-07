@@ -7,7 +7,7 @@ import java.util.HashSet;
 
 @Data
 @AllArgsConstructor @NoArgsConstructor @Getter @Setter
-@Entity @Table(name = "USERS")
+@Entity @Table(name = "BIRTHDAYS")
 public class Birthday {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

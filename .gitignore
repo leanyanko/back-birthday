@@ -18,6 +18,9 @@
 *.ipr
 /out/
 
+cache/
+/cache/
+
 ### NetBeans ###
 /nbproject/private/
 /build/
