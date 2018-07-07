@@ -37,12 +37,12 @@ public class BirthdayController {
     public Birthday updateBirthdayById(@PathVariable Long birthdayId, @RequestBody Birthday birthdayRequest) {
         Birthday birthdayFromDb = birthdayRepository.findById(birthdayId).get();
 
-        birthdayFromDb.setBirthdayname(birthdayRequest.getBirthdayname());
-        birthdayFromDb.setFirstName(birthdayRequest.getFirstName());
-        birthdayFromDb.setLastName(birthdayRequest.getLastName());
-        birthdayFromDb.setEmail(birthdayRequest.getEmail());
-        birthdayFromDb.setAboutMe(birthdayRequest.getAboutMe());
-        birthdayFromDb.setPassword(birthdayRequest.getPassword());
+//        birthdayFromDb.setBirthdayname(birthdayRequest.getBirthdayname());
+//        birthdayFromDb.setFirstName(birthdayRequest.getFirstName());
+//        birthdayFromDb.setLastName(birthdayRequest.getLastName());
+//        birthdayFromDb.setEmail(birthdayRequest.getEmail());
+//        birthdayFromDb.setAboutMe(birthdayRequest.getAboutMe());
+//        birthdayFromDb.setPassword(birthdayRequest.getPassword());
 
         return birthdayRepository.save(birthdayFromDb);
     }
