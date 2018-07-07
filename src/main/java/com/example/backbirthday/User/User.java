@@ -1,8 +1,13 @@
 package com.example.backbirthday.User;
 
 import lombok.*;
-import javax.persistence.*;
+import org.springframework.web.bind.annotation.CrossOrigin;
 
+import javax.persistence.*;
+import java.util.HashSet;
+import java.util.Set;
+
+@CrossOrigin
 @Data
 @AllArgsConstructor @NoArgsConstructor @Getter @Setter
 @Entity @Table(name = "USERS")

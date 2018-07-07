@@ -9,4 +9,5 @@ public class BirthdayApi {
 	public static void main(String[] args) {
 		SpringApplication.run(BirthdayApi.class, args);
 	}
+
 }
