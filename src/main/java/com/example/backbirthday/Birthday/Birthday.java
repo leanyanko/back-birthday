@@ -22,12 +22,25 @@ public class Birthday {
 
     @ManyToOne
     @JoinColumn(name="CREATOR")
-    @JsonIgnore
     private User creator;
+
+    @ManyToMany(fetch = FetchType.LAZY,
+            cascade = {
+                    CascadeType.PERSIST,
+                    CascadeType.MERGE
+            },
+            mappedBy = "donators")
+    private Set<User> users = new HashSet<>();
 
     @Column(name = "TOTAL_GIVEN")
     private int totalGiven;
 
     @Column(name="ENDING")
     private Date ending;
+
+    @Column(name="TITLE")
+    private String title;
+
+    @Column(name="DESCRIPTION")
+    private String description;
 }
