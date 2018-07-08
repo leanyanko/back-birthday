@@ -7,6 +7,7 @@ import lombok.*;
 import org.springframework.web.bind.annotation.CrossOrigin;
 
 import javax.persistence.*;
+import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -26,4 +27,7 @@ public class Birthday {
 
     @Column(name = "TOTAL_GIVEN")
     private int totalGiven;
+
+    @Column(name="ENDING")
+    private Date ending;
 }
